@@ -1,0 +1,13 @@
+/* pages/me/me.wxss */
+.view1{
+  width: 300rpx;
+  height: 300rpx;
+  background-color: pink;
+  text-align: center;
+}
+.view2{
+  width: 300rpx;
+  height: 300rpx;
+  background-color: skyblue;
+  text-align: center;
+}

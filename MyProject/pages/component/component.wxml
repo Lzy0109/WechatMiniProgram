@@ -1,0 +1,55 @@
+<!--pages/component/component.wxml-->
+<!-- 使用自定义组件 -->
+<!-- 
+  在json文件中引用自定义组件
+  "想要使用的自定义组件的标签名":"自定义组件路径"
+  可以在全局的app.json进行配置
+-->
+<view>使用自定义组件</view>
+<my-cpn></my-cpn>
+<my-cpn/>
+
+<view>---------------------------------------------------</view>
+<!-- 给自定义组件 传递数据和格式-->
+<view>给自定义组件 传递数据</view>
+<my-prop/>
+<my-prop title="标题" content="内容"/>
+<view>---------------------------------------------------</view>
+<view>给自定义组件 传递样式</view>
+<!-- 
+  需要在使用page的wxss文件中对样式进行定义
+  如下方的red green blue
+ -->
+<my-prop title="标题2" titleclass="red"/>
+<my-prop title="标题3" titleclass="green"/>
+<my-prop title="标题4" titleclass="blue"/>
+
+<view>---------------------------------------------------</view>
+<!-- 自定义组件事件传递数据 -->
+<view>监听计数：{{count}}</view>
+<my-event bind:increment="handleIncrement" class="my_event"/>
+
+<view>---------------------------------------------------</view>
+<!-- 
+    自定义组件练习
+    选项卡
+    点击样式进行变化，并传递index和tab-title值
+-->
+<tab-controll titles="{{['tab1','tab2','tab3']}}"
+              bind:itemclick="handleTabClick"/>
+<view>---------------------------------------------------</view>
+<!-- 组件单插槽使用 -->
+<my-slot>
+  <button size="mini">插入按钮</button>
+</my-slot>
+<view>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - </view>
+<my-slot>
+  <slider></slider>
+</my-slot>
+<view>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - </view>
+<!-- 组件多插槽使用 -->
+<my-mslot>
+<text slot="slot3">插入slot3的文本(由于开发者工具Wxml没有解析的原因会显示不正确)</text>
+<button size="mini" slot="slot2">插入slot2的按钮</button>
+<slider value="30" slot="slot1"/>
+</my-mslot>

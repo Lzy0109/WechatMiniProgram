@@ -1,0 +1,21 @@
+<!--pages/images/image.wxml-->
+<text>pages/images/image.wxml</text>
+<!-- 
+  image 行内元素 有自己的默认大小 320*240
+  mode：设置大小
+  lazy-load：懒加载
+  src：本地地址，网络地址
+-->
+<image src="../../assets/images_resources/img2.jpg" mode="aspectFit"/>
+<view>---------------------------------------------------</view>
+
+<!-- 从系统相册里选择图片 -->
+<button bind:tap="handleChooseAlbum">从系统相册中选择</button>
+<image src="{{imagePath}}" mode="aspectFit"></image>
+
+<view>---------------------------------------------------</view>
+<!-- 长按识别小程序码 -->
+<view>识别小程序码</view>
+<image show-menu-by-longpress
+       mode="aspectFit"
+       src="http://img0.imgtn.bdimg.com/it/u=2586952779,3268551997&fm=26gp=0.jpg"/>

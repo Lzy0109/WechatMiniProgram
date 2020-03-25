@@ -1,0 +1,9 @@
+<!--pages/me/me.wxml-->
+
+<!-- view与div相似 块级元素-->
+<view class="view1">view1</view>
+<view class="view2">view2</view>
+
+<!-- text与span标签类似 行内元素-->
+<text>我是text1</text>
+<text>我是text2</text>

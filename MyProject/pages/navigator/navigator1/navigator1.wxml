@@ -1,0 +1,30 @@
+<!--pages/navigator1/navigator1.wxml-->
+<!-- 默认跳转形式 -->
+<navigator url="/pages/navigator/navigator2/navigator2">跳转到navigator2页面</navigator>
+<!-- redirect 关闭当前页面并跳转 没有返回页面 -->
+<navigator url="/pages/navigator/navigator2/navigator2"
+           open-type="redirect">
+  跳转到navigator2页面（redirect）
+</navigator>
+<!-- switchTab 跳转到tabbar页面 -->
+<navigator url="/pages/navigator/navigator4/navigator4"
+           open-type="switchTab">
+           跳转到tabbar-navigator4页
+</navigator>
+<!-- reLaunch 关闭所有页面并跳转 -->
+<navigator url=""
+           open-type="reLaunch">
+           reLaunch跳转
+</navigator>
+<view>-------------------------------</view>
+<!-- 
+    正向数据传递
+    onLoad(options)
+ -->
+<navigator url="/pages/navigator/navigator2/navigator2?name=lzy&&age=21">
+  数据传递
+</navigator>
+
+<view>----------------</view>
+<!-- 按钮编辑事件跳转 -->
+<button bind:tap="handleNavigator" size="mini">跳转到navigator2</button>

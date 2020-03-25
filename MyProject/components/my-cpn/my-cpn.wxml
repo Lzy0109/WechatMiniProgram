@@ -1,0 +1,15 @@
+<!--components/my-cpn/my-cpn.wxml-->
+
+<!-- 
+  只允许使用类选择器 class=""
+  组件内的样式与外部样式互不影响
+  若需要样式影响 在想要产生影响的样式的js文件中加入
+  Component({
+    options:{
+      隔离
+      styleIsolation: "shared"
+    }
+  })
+-->
+<view class="title">{{title}}</view>
+<view class="content">{{content}}</view>

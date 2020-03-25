@@ -1,0 +1,26 @@
+<!--pages/toast/toast.wxml-->
+<!-- 展示弹窗 -->
+<view>1.Toast</view>
+<view>
+  <button size="mini" bind:tap="showToast">showToast</button>
+</view>
+<view>----------------</view>
+<view>2.Modal</view>
+<view>
+  <button size="mini" bind:tap="showModal">showModal</button>
+</view>
+<view>----------------</view>
+<view>3.Loading</view>
+<view>
+  <button size="mini" bind:tap="showLoading">showLoading</button>
+</view>
+<view>----------------</view>
+<view>4.ActionSheet</view>
+<view>
+  <button size="mini" bind:tap="showActionSheet">showActionSheet</button>
+</view>
+<view>----------------</view>
+<view>5.Share</view>
+<view>
+  <button size="mini" open-type="share">Share</button>
+</view>

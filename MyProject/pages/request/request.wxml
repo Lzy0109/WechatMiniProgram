@@ -1,0 +1,12 @@
+<!--pages/request/request.wxml-->
+<view>原生方式发送网络请求</view>
+<view>
+  <button bind:tap="hanleGetRequest" size="mini">get请求</button>
+</view>
+<view>
+  <button bind:tap="hanlePostRequest" size="mini">post请求</button>
+</view>
+<view>Promise 封装网络请求</view>
+<view>
+  <button size="mini" bind:tap="handlePromiseRequest">封装的网络请求(Post方式)</button>
+</view>

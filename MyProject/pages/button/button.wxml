@@ -1,0 +1,22 @@
+<!--pages/button/button.wxml-->
+<text>pages/button/button.wxml</text>
+<!-- 按钮 事件触发 -->
+<view>
+  <button size="mini" bind:tap="handletap"
+          bind:longpress="handlelongpress"
+          bindtouchstart="handletouchstart"
+          bindtouchend="handletouchend">
+  按钮
+  </button>
+</view>
+
+<!-- 获取信息 -->
+<view class="container">
+  <block wx:for="{{titles}}" wx:key="index">
+    <view class="item" 
+          bind:tap="handleItemClick"
+          data-index="{{index}}"
+          data-item="{{item}}">{{item}}</view>
+  </block>
+</view>
+

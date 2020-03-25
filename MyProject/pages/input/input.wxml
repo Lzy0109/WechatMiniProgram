@@ -1,0 +1,21 @@
+<!--pages/input/input.wxml-->
+<input/>
+
+<!-- value 设置默认值 -->
+<!-- type 决定弹出键盘类型 -->
+<!-- placeholder 占位文字 -->
+<!-- password 暗文输入 -->
+<input type="number" value="数字输入键盘"/>
+<input type="text" value="文本输入键盘"/>
+<input type="idcard" value="身份证输入键盘"/>
+<input type="digit" value="带小数点输入键盘"/>
+<input type="password" placeholder="enter password..."/>
+<!-- confirm-type 键盘提交键类型 -->
+<input confirm-type="send" placeholder="键盘是发送键"/>
+<input confirm-type="search" placeholder="键盘是搜索键"/>
+<input confirm-type="go" placeholder="键盘是前往键"/>
+<input confirm-type="done" placeholder="键盘完成键"/>
+<!-- input绑定事件 -->
+<input bind:input="bindinput"
+       bind:blur="bindblur"
+       bind:focus="bindfocus"/>

@@ -1,0 +1,4 @@
+<!--pages/navigator3/navigator3.wxml-->
+<text>pages/navigator3/navigator3.wxml</text>
+<!-- navigator多层级跳转时 可设置delta=n n为层级数 -->
+<navigator open-type="navigateBack" delta="2">navigator多层返回按钮</navigator>
